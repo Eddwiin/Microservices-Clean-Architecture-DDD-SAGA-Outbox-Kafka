@@ -10,6 +10,7 @@ import org.food.ordering.system.order.service.domain.entity.Product;
 import org.food.ordering.system.order.service.domain.entity.Restaurant;
 import org.food.ordering.system.order.service.domain.valueObject.StreetAddress;
 import org.food.ordering.system.service.domain.dto.create.CreateOrderCommand;
+import org.food.ordering.system.service.domain.dto.create.CreateOrderResponse;
 import org.food.ordering.system.service.domain.dto.create.OrderAddress;
 import org.springframework.stereotype.Component;
 
@@ -26,6 +27,13 @@ public class OrderDataMapper {
                         new Product(new ProductId(orderItem.getProductId())))
                         .collect(Collectors.toList())
                 )
+                .build();
+    }
+
+    public CreateOrderResponse orderToCreateOrderResponse(Order order) {
+        return CreateOrderResponse.builder()
+                .orderTrackingId(order.getTrackingId().getValue())
+                .orderStatus(order.getOrderStatus())
                 .build();
     }
 
@@ -47,6 +55,7 @@ public class OrderDataMapper {
                         .price(new Money(orderItem.getPrice()))
                         .build()
                 )
+                .collect(Collectors.toList());
     }
 
     private StreetAddress orderAddressToStreetAddress(OrderAddress orderAddress) {
