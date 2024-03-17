@@ -124,7 +124,7 @@ public class Order extends AggregateRoot<OrderId> {
         customerId = builder.customerId;
         restaurantId = builder.restaurantId;
         deliveryAddress = builder.deliveryAddress;
-        price = builder.money;
+        price = builder.price;
         items = builder.items;
         trackingId = builder.trackingId;
         orderStatus = builder.orderStatus;

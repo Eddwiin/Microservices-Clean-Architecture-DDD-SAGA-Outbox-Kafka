@@ -49,7 +49,7 @@ public class OrderCreateCommandHandler {
         Order orderResult = saveOrder(order);
 
         log.info("Order is created with id: {}", orderResult.getId().getValue());
-        return orderDataMapper.orderToCreateOrderResponse(orderResult);
+        return orderDataMapper.orderToCreateOrderResponse(orderResult, "Order created successfuly");
     }
 
     private Restaurant checkRestaurant(CreateOrderCommand createOrderCommand) {
