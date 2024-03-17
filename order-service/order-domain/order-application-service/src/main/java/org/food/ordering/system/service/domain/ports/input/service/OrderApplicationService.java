@@ -1,4 +1,4 @@
-package org.food.ordering.system.service.ports.input.service;
+package org.food.ordering.system.service.domain.ports.input.service;
 
 import jakarta.validation.Valid;
 import org.food.ordering.system.service.domain.dto.create.CreateOrderCommand;

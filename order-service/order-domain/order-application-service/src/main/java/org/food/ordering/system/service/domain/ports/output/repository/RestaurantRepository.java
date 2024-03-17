@@ -1,4 +1,4 @@
-package org.food.ordering.system.service.ports.output.repository;
+package org.food.ordering.system.service.domain.ports.output.repository;
 
 import org.food.ordering.system.order.service.domain.entity.Restaurant;
 

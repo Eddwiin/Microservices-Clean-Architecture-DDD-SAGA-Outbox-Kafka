@@ -1,4 +1,4 @@
-package org.food.ordering.system.service.ports.input.message.listener.restaurantapproval;
+package org.food.ordering.system.service.domain.ports.input.message.listener.restaurantapproval;
 
 import org.food.ordering.system.service.domain.dto.message.ResturantApprovalResponse;
 

@@ -4,7 +4,6 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
-import org.food.ordering.system.order.service.domain.entity.OrderItem;
 
 import java.math.BigDecimal;
 import java.util.List;

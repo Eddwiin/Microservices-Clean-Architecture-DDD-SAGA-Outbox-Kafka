@@ -1,8 +1,6 @@
 package org.food.ordering.system.order.service.domain.event;
 
-import org.food.ordering.system.domain.event.DomainEvent;
 import org.food.ordering.system.order.service.domain.entity.Order;
-
 import java.time.ZonedDateTime;
 
 public class OrderCreatedEvent extends OrderEvent {
