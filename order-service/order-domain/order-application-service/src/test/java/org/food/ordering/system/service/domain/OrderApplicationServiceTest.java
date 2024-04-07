@@ -5,7 +5,6 @@ import org.food.ordering.system.order.service.domain.entity.Customer;
 import org.food.ordering.system.order.service.domain.entity.Order;
 import org.food.ordering.system.order.service.domain.entity.Product;
 import org.food.ordering.system.order.service.domain.entity.Restaurant;
-import org.food.ordering.system.order.service.domain.exception.OrderDomainException;
 import org.food.ordering.system.service.domain.dto.create.CreateOrderCommand;
 import org.food.ordering.system.service.domain.dto.create.CreateOrderResponse;
 import org.food.ordering.system.service.domain.dto.create.OrderAddress;

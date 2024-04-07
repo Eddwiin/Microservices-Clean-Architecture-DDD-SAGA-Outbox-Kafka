@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.mockito.Mockito;
 
-@SpringBootApplication(scanBasePackages = "org.food.ordering.system.service.domain")
+@SpringBootApplication(scanBasePackages = "org.food.ordering.system")
 public class OrderTestConfiguration {
 
     @Bean
@@ -18,28 +18,28 @@ public class OrderTestConfiguration {
         return Mockito.mock(OrderCreatedPaymentRequestMessagePublisher.class);
     }
 
-    @Bean
-    public OrderCancelledPaymentRequestMessagePublisher orderCancelledPaymentRequestMessagePublisher() {
-        return Mockito.mock(OrderCancelledPaymentRequestMessagePublisher.class);
-    }
-
-    @Bean
-    public OrderPaidRestaurantRequestMessagePublisher orderPaidRestaurantRequestMessagePublisher() {
-        return Mockito.mock(OrderPaidRestaurantRequestMessagePublisher.class);
-    }
-
-    @Bean
-    public OrderRepository orderRepository() {
-        return Mockito.mock(OrderRepository.class);
-    }
-
-    @Bean
-    public CustomerRepository customerRepository() {
-        return Mockito.mock(CustomerRepository.class);
-    }
-
-    @Bean
-    public RestaurantRepository restaurantRepository() {
-        return Mockito.mock(RestaurantRepository.class);
-    }
+//    @Bean
+//    public OrderCancelledPaymentRequestMessagePublisher orderCancelledPaymentRequestMessagePublisher() {
+//        return Mockito.mock(OrderCancelledPaymentRequestMessagePublisher.class);
+//    }
+//
+//    @Bean
+//    public OrderPaidRestaurantRequestMessagePublisher orderPaidRestaurantRequestMessagePublisher() {
+//        return Mockito.mock(OrderPaidRestaurantRequestMessagePublisher.class);
+//    }
+//
+//    @Bean
+//    public OrderRepository orderRepository() {
+//        return Mockito.mock(OrderRepository.class);
+//    }
+//
+//    @Bean
+//    public CustomerRepository customerRepository() {
+//        return Mockito.mock(CustomerRepository.class);
+//    }
+//
+//    @Bean
+//    public RestaurantRepository restaurantRepository() {
+//        return Mockito.mock(RestaurantRepository.class);
+//    }
 }
